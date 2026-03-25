@@ -7,7 +7,7 @@ obj/
 
 # Assignment-unwanted files
 Properties/
-app.config
+App.config
 *.csproj
 
 # Debug / cache
