@@ -5,13 +5,13 @@
 bin/
 obj/
 
-# User-specific files
-*.suo
-*.user
+# Assignment-unwanted files
+Properties/
+app.config
+*.csproj
 
-# Debug / Release files
+# Debug / cache
 *.exe
 *.pdb
-
-# Cache files
+*.suo
 *.vsidx
