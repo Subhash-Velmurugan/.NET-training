@@ -48,6 +48,8 @@
     <Compile Include="question1.cs" />
     <Compile Include="Question2.cs" />
     <Compile Include="question3.cs" />
+    <Compile Include="question4.cs" />
+    <Compile Include="question5.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

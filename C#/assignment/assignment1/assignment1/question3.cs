@@ -20,10 +20,10 @@ namespace assignment1
         }
         static void Arithmetic(int x, char op, int y)
         {
-            if (op == '+') Console.WriteLine($"{x + y}");
-            else if (op == '-') Console.WriteLine($"{0} {1} "=" {2}"{x - y}");
-            else if (op == '*') Console.WriteLine($"{x * y}");
-            else Console.WriteLine($"{x / y}");
+            if (op == '+') Console.WriteLine($"{x} + {y} = {x + y}");
+            else if (op == '-') Console.WriteLine($"{x} - {y} = {x-y}");
+            else if (op == '*') Console.WriteLine($"{x} * {y} = {x * y}");
+            else Console.WriteLine($"{x} / {y} = {x / y}");
         }
     }
 }

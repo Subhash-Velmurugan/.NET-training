@@ -1,0 +1,17 @@
+# Visual Studio
+.vs/
+
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.suo
+*.user
+
+# Debug / Release files
+*.exe
+*.pdb
+
+# Cache files
+*.vsidx
