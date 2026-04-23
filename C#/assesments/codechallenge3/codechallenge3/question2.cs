@@ -16,7 +16,7 @@ namespace codechallenge3
             Console.Write("Enter file name: ");
             string filePath = Console.ReadLine();
             Console.Write("Enter text to append to the file: ");
-            string text=Console.ReadLine();
+            string text = Console.ReadLine();
             try
             {
                 using (StreamWriter sw = new StreamWriter(filePath, true))
@@ -27,7 +27,9 @@ namespace codechallenge3
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred: " + ex.Message);
+                {
+                    Console.WriteLine("An error occurred: " + ex.Message);
+                }
             }
         }
     }

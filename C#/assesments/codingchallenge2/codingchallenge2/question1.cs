@@ -11,7 +11,6 @@ namespace codingchallenge2
         public string name { get; set; }
         public int id { get; set; }
         public double grade { get; set; }
-
         public student(string name, int id, double grade)
         {
             this.name = name;
@@ -30,7 +29,6 @@ namespace codingchallenge2
             Console.WriteLine("Graduate Student:");
             Console.WriteLine($"Name: {grad.name}, ID: {grad.id}, Grade: {grad.grade}");
             Console.WriteLine($"Passed: {grad.ispassed(grad.grade)}");
-
         }
     }
     public class undergraduate : student
@@ -53,8 +51,7 @@ namespace codingchallenge2
             return grade > 80.0;
         }
         
-    }
-    
+    } 
   }
 
 

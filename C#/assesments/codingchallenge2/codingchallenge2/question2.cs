@@ -11,7 +11,6 @@ namespace codingchallenge2
         public int prod_id { get; set; }
         public string prod_name { get; set; }
         public double prod_price { get; set; }
-
         public product(int id, string name, double price)
         {
             this.prod_id = id;
@@ -36,7 +35,6 @@ namespace codingchallenge2
 
                 products.Add(new product(id, name, price));
             }
-
             var sortedProducts = products.OrderBy(p => p.prod_price).ToList();
             Console.WriteLine("Products sorted by price:");
             foreach (var product in sortedProducts)

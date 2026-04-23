@@ -51,17 +51,14 @@ namespace codingchallenge2
                         result = Calculator.Calculate(num1, num2, Calculator.Subtract);
                         Console.WriteLine("Subtraction Result: " + result);
                         break;
-
                     case 3:
                         result = Calculator.Calculate(num1, num2, Calculator.Multiply);
                         Console.WriteLine("Multiplication Result: " + result);
                         break;
-
                     case 4:
                         result = Calculator.Calculate(num1, num2, Calculator.Divide);
                         Console.WriteLine("Division Result: " + result);
                         break;
-
                     default:
                         Console.WriteLine("Invalid choice");
                         break;
@@ -71,7 +68,6 @@ namespace codingchallenge2
             {
                 Console.WriteLine("Error: " + ex.Message);
             }
-
             Console.ReadLine();
         }
 
