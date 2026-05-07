@@ -125,3 +125,5 @@ GROUP BY DATE;
 SELECT LOWER(name) AS employee_name
 FROM employees
 WHERE SALARY IS NULL;
+USE assessment
+select * from employees
