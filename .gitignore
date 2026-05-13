@@ -9,7 +9,7 @@ obj/
 Properties/
 App.config
 *.csproj
-
+*.slnx
 # Debug / cache
 *.exe
 *.pdb
