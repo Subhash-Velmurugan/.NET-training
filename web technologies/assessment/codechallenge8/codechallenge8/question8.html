@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>append</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <input type="text" id="textInput" placeholder="Type a sentence">
+    <button id="appendBtn">Append</button>
+
+    <p id="output"></p>
+
+    <script>
+$(document).ready(function () {
+    $("#appendBtn").click(function () {
+        var text = $("#textInput").val(); 
+        if (text.trim() !== "") {
+            $("#output").append(text + "<br>"); 
+            $("#textInput").val("");
+        }
+    });
+});
+    </script>
+</body>
+
+</html>
