@@ -13,6 +13,8 @@ namespace Foodmanagement_assessment1
     {
         void Application_Start(object sender, EventArgs e)
         {
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
             Application["TotalVisitors"] = 0;
             Application["ActiveUsers"] = 0;
         }
