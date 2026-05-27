@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Food Order Management</title>
+</head>
+
+<body>
+    <form runat="server">
+
+        <!-- HEADER -->
+        <h2>Food Order Management System</h2>
+
+        <!-- NAVIGATION -->
+        <a href="MenuList.aspx">Menu Items</a> |
+        <a href="AddEditMenu.aspx">Add Menu</a> |
+        <a href="OrderStats.aspx">Order Stats</a> |
+        <a href="Logout.aspx">Logout</a>
+
+        <hr />
+
+        <!-- CONTENT AREA -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+
+        <hr />
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2026 Food Management</p>
+        </footer>
+
+    </form>
+</body>
+</html>
