@@ -36,4 +36,3 @@ CREATE TABLE Cancellation (
     RefundAmt DECIMAL(10,2) DEFAULT 900,
     FOREIGN KEY (BookingId) REFERENCES Booking(BookingId)
 );
-select * from Train
