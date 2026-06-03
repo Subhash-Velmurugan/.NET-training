@@ -1,0 +1,20 @@
+﻿@model List<Question2.Models.Movie>
+
+<h2>Search by Director</h2>
+
+<form method="get">
+    Name: <input type="text" name="name" />
+    <input type="submit" value="Search" />
+</form>
+
+@if (Model != null && Model.Count > 0)
+{
+    foreach (var m in Model)
+    {
+        <p>@m.MovieName - @m.DirectorName</p>
+    }
+}
+else if (Model != null)
+{
+    <p>No movies found</p>
+}

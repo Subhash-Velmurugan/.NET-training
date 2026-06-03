@@ -1,0 +1,28 @@
+﻿@model List<Question2.Models.Movie>
+
+<h2>Movies List</h2>
+
+/Movies/CreateAdd Movie</a>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Director</th>
+        <th>Date</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var m in Model)
+    {
+        <tr>
+            <td>@m.MovieName</td>
+            <td>@m.DirectorName</td>
+            <td>@m.DateOfRelease.ToShortDateString()</td>
+
+            <td>
+                <a href="/Movies/Edit/@m.Id">Edit</a> |
+                <a href="/Movies/Delete/@m.Id">Delete</a>
+            </td>
+        </tr>
+}
+</table>

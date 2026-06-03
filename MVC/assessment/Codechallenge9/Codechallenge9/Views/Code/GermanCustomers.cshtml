@@ -1,0 +1,22 @@
+﻿@model List<Codechallenge9.Customer>
+
+<h2>Customers from Germany</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Company Name</th>
+        <th>City</th>
+        <th>Country</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CustomerID</td>
+            <td>@item.CompanyName</td>
+            <td>@item.City</td>
+            <td>@item.Country</td>
+        </tr>
+    }
+</table>

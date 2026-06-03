@@ -1,0 +1,16 @@
+﻿@model Codechallenge9.Customer
+
+<h2>Customer for OrderID 10248</h2>
+
+@if (Model != null)
+{
+    <p><b>ID:</b> @Model.CustomerID</p>
+    <p><b>Company:</b> @Model.CompanyName</p>
+    <p><b>Contact:</b> @Model.ContactName</p>
+    <p><b>City:</b> @Model.City</p>
+    <p><b>Country:</b> @Model.Country</p>
+}
+else
+{
+    <p>No customer found</p>
+}

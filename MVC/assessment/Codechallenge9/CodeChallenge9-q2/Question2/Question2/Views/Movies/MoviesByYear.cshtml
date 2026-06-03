@@ -1,0 +1,13 @@
+﻿@model List<Question2.Models.Movie>
+
+<h2>Search by Year</h2>
+
+<form method="get">
+    Year: <input type="text" name="year" />
+    <input type="submit" value="Search" />
+</form>
+
+@foreach (var m in Model)
+{
+    <p>@m.MovieName - @m.DateOfRelease.Year</p>
+}
