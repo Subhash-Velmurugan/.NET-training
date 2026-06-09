@@ -1,0 +1,22 @@
+﻿@model IEnumerable<NorthwindAPI.Models.OrderViewModel>
+
+<h2>Steven Buchanan Orders</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Order ID</th>
+        <th>Customer ID</th>
+        <th>Order Date</th>
+        <th>Ship Name</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.OrderID</td>
+            <td>@item.CustomerID</td>
+            <td>@item.OrderDate</td>
+            <td>@item.ShipName</td>
+        </tr>
+    }
+</table>
